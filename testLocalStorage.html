@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="testLocal.css" />
+  </head>
+  <body>
+    <div class="item-list">
+      <div class="item1">
+        <img src="" alt="" />
+        <p></p>
+        <p></p>
+
+        <button onclick="empty1()">delete</button>
+      </div>
+      <div class="item2">
+        <img src="" alt="" />
+        <p></p>
+        <p></p>
+
+        <button onclick="empty2()">delete</button>
+      </div>
+    </div>
+
+    <script>
+      var product1 = JSON.parse(localStorage.getItem("item1"));
+      document.getElementsByClassName("item1")[0].querySelector("img").src =
+        product1.img;
+      //document.getElementsByClassName("test")[0].querySelector("p") = product1.name;
+      document
+        .getElementsByClassName("item1")[0]
+        .querySelectorAll("p")[0].innerText = product1.name;
+
+      document
+        .getElementsByClassName("item1")[0]
+        .querySelectorAll("p")[1].innerText = product1.price + "DT";
+
+      function empty1() {
+        localStorage.removeItem("item1");
+        window.location.reload;
+      }
+      var product2 = JSON.parse(localStorage.getItem("item2"));
+      console.log(product2);
+      document.getElementsByClassName("item2")[0].querySelector("img").src =
+        product2.img;
+      document
+        .getElementsByClassName("item2")[0]
+        .querySelectorAll("p")[0].innerText = product2.name;
+
+      document
+        .getElementsByClassName("item2")[0]
+        .querySelectorAll("p")[1].innerText = product2.price + "DT";
+
+      function empty2() {
+        localStorage.removeItem("item2");
+        window.location.reload;
+      }
+    </script>
+  </body>
+</html>

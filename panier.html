@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="panier.css" />
+    <link rel="stylesheet" href="DOM.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body onload="load()">
+    <header>
+      <div class="sold">
+        <div class="hwrap">
+          <div class="hmove">
+            <i class="fa-solid fa-truck"></i>
+            <div class="hitem">
+              Livraison gratuite à partir de 500DT d'achat sur les produits
+            </div>
+            <i class="fa-solid fa-truck"></i>
+            <div class="hitem">Des nouvelles collections 2022</div>
+            <i class="fa-solid fa-truck"></i>
+          </div>
+        </div>
+      </div>
+      <div class="barre">
+        <div class="un">
+          <a href="/index.html"><img src="/images/logo-home.jpg" alt="" /></a>
+        </div>
+        <div class="deux">
+          <div class="recherche">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" value="" placeholder="Search" />
+          </div>
+          <button>Rechercher</button>
+        </div>
+        <div class="trois">
+          <div class="conneter">
+            <i class="fa-regular fa-user"></i>
+            <li><a href="/connecter.html">Se connecter</a></li>
+          </div>
+          <div class="aide">
+            <i class="fa-solid fa-circle-info"></i>
+            <li><a href="">Aide</a></li>
+          </div>
+          <div class="panier">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <li><a href="">Panier</a></li>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="principal">
+      <table>
+        <tbody id="table" class="items"></tbody>
+      </table>
+
+      <div class="total">
+        <div class="total1"><h1>RÉSUMÉ DU PANIER</h1></div>
+        <div class="total2">
+          <h1>Sous-total</h1>
+          <h1>00.00</h1>
+        </div>
+        <div class="total2">
+          <h1>TVA (19%)</h1>
+          <h1>00.00</h1>
+        </div>
+        <div class="total2">
+          <h1>Livraison</h1>
+          <h1>80.00</h1>
+        </div>
+        <div class="total3">
+          <h1>TOTAL:</h1>
+          <h1 id="tot">00.00</h1>
+        </div>
+        <div class="total4">
+          <button class="sign styled" type="button">commander</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="footer-gauche">
+      <img src="/images/logo-home.jpg" alt="" />
+    </div>
+    <div class="footer-millieu">
+      <div class="a-propos">
+        <h1>A propos:</h1>
+        <p>Qui sommes-nous</p>
+        <p>Conditions d'utilisation</p>
+        <p>Nos services</p>
+      </div>
+    </div>
+    <div class="footer-droit">
+      <h1>Service client:</h1>
+      <p>Centre d'assistance</p>
+      <p>Méthodes de paiement</p>
+      <p>Politique de retour</p>
+    </div>
+  </footer>
+
+  <script>
+    function load() {
+      var products = [];
+      var prod = [];
+      s = 0;
+      for (let i = 0; i < localStorage.length; i++) {
+        products[i] = localStorage.getItem(localStorage.key(i));
+        prod[i] = JSON.parse(products[i]);
+        s = s + prod[i].price;
+      }
+      console.log(prod);
+
+      document.getElementById("tot").innerText = s;
+      affichage(prod);
+      sup(prod);
+    }
+
+    function affichage(param) {
+      let i = 0;
+
+      while (i < param.length) {
+        // Print the current element
+
+        document.getElementById("table").innerHTML +=
+          "<tr class='Item'> <td> <img src=" +
+          param[i].img +
+          " > </td><td class='description'>" +
+          param[i].name +
+          "</td><td><div  class='price'>" +
+          param[i].price +
+          `</div><div><button onClick=minus(${i}) class='minus-btn'><h1>-</h1></button><input class='modif' type='text'  value=' 1' /><button onClick=plus(${i}) class='plus-btn'><h1>+</h1></button></div></td><td> <button onClick=sup() class='delete'><h1>X</h1></button></td> </tr>`;
+
+        // Increment the value
+        i++;
+      }
+    }
+
+    function plus(key) {
+      var pluss = document.getElementsByClassName("plus-btn");
+      var price = document.getElementsByClassName("price");
+
+      console.log(price);
+      pluss[key].previousElementSibling.value++;
+    }
+    function minus(key) {
+      var minuss = document.getElementsByClassName("minus-btn");
+      if (minuss[key].nextElementSibling.value > 1) {
+        minuss[key].nextElementSibling.value--;
+      }
+    }
+    function sup(param) {}
+    var total2 = document.getElementsByClassName("total2");
+    total2.h1 = 354343;
+
+    function total() {
+      localStorage.getItem("");
+    }
+
+    // function totalPrices() {
+    // let s = 0;
+    // for (let i = 0; i < item.length; i++) {
+    //  s =
+    //  s +
+    //item[i].querySelector(".Quant").value *
+    //item[i].querySelector(".price").innerText;
+    // }
+    //return (totalPrice.value = s);
+    // }
+  </script>
+</html>

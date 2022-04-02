@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+
+ <h1>Jennnmajnoun</h1>
+ <input type="button" value="send" onclick="test()">
+
+ <table >
+   <tbody id="table">
+
+   </tbody>
+
+ </table>
+
+<script>
+  var product1 = {
+        name: "Iphone name name",
+        img: "tabouret3.jpeg",
+        price: 1555042345,
+      };
+      var product2 = {
+        name: "sumsung name name",
+        img: "tabouret4.jpeg",
+        price: 4444444345,
+      };
+      var product3 = {
+        name: "sumsung name name",
+        img: "tabouret4.jpeg",
+        price: 444345,
+      };
+
+  products = [product1, product2, product3]
+  function test() {
+    let i = 0;
+ 
+
+  while (i < products.length) {
+
+      // Print the current element
+      console.log(products[i]);
+
+      document.getElementById('table').innerHTML +=
+        '<tr> <td> <img src=' + products[i].img+ ' > </td><td>' + products[i].name+'</td><td>' + products[i].price+'</td> </tr>'
+
+      // Increment the value
+      i++;
+  }
+  }
+
+</script>
+  <style type="text/css">
+  tbody tr {
+  
+    color: purple;
+    background-color: #d8da3d;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    }
+    img{
+      height: 20%;
+    }
+  </style>
+
+</html>
+</body>

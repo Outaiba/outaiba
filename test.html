@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <button class="front">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+      <img id="img" src="/images/armoir1.jpeg" alt="armoir1" />
+      <button class="back">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+
+      <script>
+        var images = [
+          "tabouret3.jpeg",
+          "tabouret4.jpeg",
+          "tabouret5.jpeg",
+          "tabouret6.jpeg",
+          "tabouret7.jpeg",
+        ];
+        var img = document.getElementById("img");
+
+        let i = 0;
+        img.src = images[i];
+
+        document
+          .getElementsByClassName("front")[0]
+          .addEventListener("click", function () {
+            img.src = images[i];
+            i++;
+            console.log(i);
+            if (i > images.length - 1) {
+              i = 0;
+            }
+          });
+
+        document
+          .getElementsByClassName("back")[0]
+          .addEventListener("click", function () {
+            img.src = images[i];
+            if (i != 0) {
+              i--;
+            } else {
+              i = images.length;
+            }
+            console.log(i);
+          });
+      </script>
+    </div>
+  </body>
+</html>

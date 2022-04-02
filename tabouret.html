@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="articles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="sold">
+        <div class="hwrap">
+          <div class="hmove">
+            <i class="fa-solid fa-truck"></i>
+            <div class="hitem">
+              Livraison gratuite à partir de 500DT d'achat sur les produits
+            </div>
+            <i class="fa-solid fa-truck"></i>
+            <div class="hitem">Des nouvelles collections 2022</div>
+            <i class="fa-solid fa-truck"></i>
+          </div>
+        </div>
+      </div>
+      <div class="barre">
+        <div class="un">
+          <a href="/index.html"><img src="/images/logo-home.jpg" alt="" /></a>
+        </div>
+        <div class="deux">
+          <div class="recherche">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" value="" placeholder="Search" />
+          </div>
+          <button>Rechercher</button>
+        </div>
+        <div class="trois">
+          <div class="conneter">
+            <i class="fa-regular fa-user"></i>
+            <li><a href="/connecter.html">Se connecter</a></li>
+          </div>
+          <div class="aide">
+            <i class="fa-solid fa-circle-info"></i>
+            <li><a href="">Aide</a></li>
+          </div>
+          <div class="panier">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <li><a href="panier.html">Panier</a></li>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <main>
+
+    <div class="contener-pageArticle">
+        <img src="/images/bureau0.jpeg" alt="bureau9">
+    </div>
+
+    <div class="contener2-Articles">
+      <div class="article-gauche">
+        <p>Dans la même catégorie</p>
+          
+
+        
+      </div>
+
+      <div class="articles-droit">
+        <div class="enTeteArticles">
+          <h1>Tabouret</h1>
+        </div>
+        <div class="item1-Articles">
+          <img src="/images/tabouret1.jpeg" alt="tabouret1" />
+          <div class="caractéristique">
+            <p>Tabouret massage à roulettes réglable en hauteur pivotant dossier ergonomique gris - Gris</p>
+          </div>
+          <div class="prix-panier">
+            <h1>146 DT</h1>
+            <button class="sign styled" type="button" onclick="add1()">AJOUTER AU PANIER</button>
+          </div>
+        </div>
+        <div class="item1-Articles">
+          <img src="/images/tabouret2.jpeg" alt="tabouret2" />
+          <div class="caractéristique">
+            <p>Tabouret de Douche, Tabouret de bain pivotant à 360°, pour les personnes handicapées, pieds antidérapants, antidérapant, sûr et Stable</p>
+          </div>
+          <div class="prix-panier">
+            <h1>136 DT</h1>
+            <button class="sign styled" type="button" onclick="add2()">AJOUTER AU PANIER</button>
+          </div>
+        </div>
+        <div class="item1-Articles">
+          <img src="/images/tabouret3.jpeg" alt="tabouret3" />
+          <div class="caractéristique">
+            <p>Tabouret Rond Pouf Coffre de Rangement 2 En 1 dim. 36 x 36 x 45 cm Lin Gris </p>
+          </div>
+          <div class="prix-panier">
+            <h1>156 DT</h1>
+            <button class="sign styled" type="button" onclick="add3()">AJOUTER AU PANIER</button>
+          </div>
+        </div>
+        <div class="item1-Articles">
+          <img src="/images/tabouret4.jpeg" alt="tabouret4" />
+          <div class="caractéristique">
+            <p>Tabouret bas Bouton Pastel Scandi - Blanc - Atmosphera - Blanc</p>
+          </div>
+          <div class="prix-panier">
+            <h1>346 DT</h1>
+            <button class="sign styled" type="button">AJOUTER AU PANIER</button>
+          </div>
+        </div>
+        <div class="item1-Articles">
+          <img src="/images/tabouret5.jpeg" alt="tabouret5" />
+          <div class="caractéristique">
+            <p>Bureau blanc a 5 tiroirs</p>
+          </div>
+          <div class="prix-panier">
+            <h1>346 DT</h1>
+            <button class="sign styled" type="button">AJOUTER AU PANIER</button>
+          </div>
+        </div>
+      </div> 
+    </div>
+                
+
+
+  </main>
+
+</main>
+
+<footer>
+  <div class="footer-gauche">
+    <img src="/images/logo-home.jpg" alt="" />
+  </div>
+  <div class="footer-millieu">
+    <div class="a-propos">
+      <h1>A propos:</h1>
+      <p>Qui sommes-nous</p>
+      <p>Conditions d'utilisation</p>
+      <p>Nos services</p>
+    </div>
+  </div>
+  <div class="footer-droit">
+    <h1>Service client:</h1>
+    <p>Centre d'assistance</p>
+    <p>Méthodes de paiement</p>
+    <p>Politique de retour</p>
+  </div>
+</footer>
+</body>
+
+
+
+
+<script>
+  var product1 = {
+        name: "Tabouret massage à roulettes réglable en hauteur pivotant dossier ergonomique gris - Gris",
+        img: "tabouret1.jpeg",
+        price: 145,
+      };
+  var product2 = {
+        name: "Tabouret de Douche, Tabouret de bain pivotant à 360°, réglable en hauteur sur 7 niveaux, pour les personnes handicapées, âgées et invalides, pieds antidérapants, antidérapant, sûr et Stable",
+        img: "tabouret2.jpeg",
+        price: 444,
+      };
+  var product3 = {
+        name: "Tabouret Rond Pouf Coffre de Rangement 2 En 1 dim. 36 x 36 x 45 cm Lin Gris",
+        img: "tabouret3.jpeg",
+        price: 345,
+      };
+function add1(){
+  localStorage.setItem("tabouret1", JSON.stringify(product1));
+}
+function add2(){
+  localStorage.setItem("tabouret2", JSON.stringify(product2));
+}
+function add3(){
+  localStorage.setItem("tabouret3", JSON.stringify(product3));
+}
+</script>
+</html>
+

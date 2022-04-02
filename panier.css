@@ -1,0 +1,126 @@
+.items {
+  width: 70%;
+}
+
+.principal {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.principal .items .Item {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 15px;
+}
+.principal .items .Item img {
+  width: 200px;
+  height: 230px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.description {
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.price {
+  font-size: x-large;
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+button {
+  font-size: 20px;
+  color: white;
+  background-color: #ffa500;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+button h1 {
+  font-size: 20px;
+}
+
+input {
+  width: 40px;
+  font-size: 20px;
+  padding-left: 30px;
+  border: none;
+}
+.delete {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  background-color: #ffa500;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+}
+.total {
+  width: 28%;
+  background-color: white;
+  height: 300px;
+  position: static;
+  margin-top: 15px;
+}
+.total .total1 {
+  font-size: 10px;
+  margin-top: 10px;
+  border-bottom: black solid 2px;
+  margin-left: 10px;
+}
+.total .total2 {
+  font-size: 10px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.total .total3 {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  border-top: 2px solid black;
+  margin-left: 10px;
+}
+.total .total4 {
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  width: 200px;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(220, 114, 0);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 132, 0, 0.961);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}

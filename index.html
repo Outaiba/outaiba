@@ -1,15 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>outaiba</h1>
-    <h1>gherairi</h1>
-    <h2>outaiba gherairi</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam modi id nostrum sed iste, molestias quisquam mollitia pariatur consequatur eligendi neque ex, laborum vitae, accusamus repellendus natus. Velit, asperiores ullam?</p>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="DOM.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="sold">
+        <div class="hwrap">
+          <div class="hmove">
+            <i class="fa-solid fa-truck"></i>
+            <div class="hitem">
+              Livraison gratuite à partir de 500DT d'achat sur les produits
+            </div>
+            <i class="fa-solid fa-truck"></i>
+            <div class="hitem">Des nouvelles collections 2022</div>
+            <i class="fa-solid fa-truck"></i>
+          </div>
+        </div>
+      </div>
+      <div class="barre">
+        <div class="un">
+          <a href="/index.html"><img src="/images/logo-home.jpg" alt="" /></a>
+        </div>
+        <div class="deux">
+          <div class="recherche">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" value="" placeholder="Search" />
+          </div>
+          <button>Rechercher</button>
+        </div>
+        <div class="trois">
+          <div class="conneter">
+            <i class="fa-regular fa-user"></i>
+            <li><a href="/connecter.html">Se connecter</a></li>
+          </div>
+          <div class="aide">
+            <i class="fa-solid fa-circle-info"></i>
+            <li><a href="">Aide</a></li>
+          </div>
+          <div class="panier">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <li><a href="panier.html">Panier</a></li>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="contener1">
+        <div class="contenerGauche">
+          <li><a href="/canape.html">Canape </a></li>
+          <li><a href="/armoire.html">Armoir chambre </a></li>
+          <li><a href="/etagere.html">Etagier </a></li>
+          <li><a href="/tabouret.html">Tabouret </a></li>
+          <li><a href="lit.html">Lit double </a></li>
+          <li><a href="fauteuil.html">Fauteuil </a></li>
+          <li><a href="bureau.html">Bureau </a></li>
+          <li><a href="">Chaise Longue </a></li>
+          <li><a href="">Veilleuse Cristal </a></li>
+          <li><a href="">Coussins </a></li>
+          <li><a href="">Chaise de jardin </a></li>
+          <li><a href="">Meuble de cuisine </a></li>
+          <li><a href="">Meuble bébé </a></li>
+        </div>
+        <div class="contenerMulieu">
+          <button class="back">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <img src="/images/salon-moderne.jpeg" alt="salonContener" />
+          <button class="front">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="contenerDroit">
+          <div class="pub1">
+            <i class="fa-regular fa-circle-question"></i>
+            <li><a href="">Service clientèle</a></li>
+            <i class="fa-solid fa-truck-fast"></i>
+            <li><a href="">Service Livraison</a></li>
+            <i class="fa-regular fa-credit-card"></i>
+            <li><a href="">Modes de paiement</a></li>
+          </div>
+          <div class="pub2">
+            <img src="/images/bureau1.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="contener2">
+        <div class="enTete">
+          <div class="gauche">
+            <h1>Canape</h1>
+          </div>
+          <div class="droit">
+            <li><a href="/canape.html">Voir Plus</a></li>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="items1">
+          <div class="item1">
+            <img src="/images/canape1.jpeg" alt="canape1" />
+            <div>
+              <p>Canapé en velours ...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/canape2.jpeg" alt="canape2" />
+            <div>
+              <p>Chaise de salon chaise ...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/canape3.jpeg" alt="canape3" />
+            <div>
+              <p>Canapé d'angle convertib...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/canape4.jpeg" alt="canape4" />
+            <div>
+              <p>Canapé d'angle droit ...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/canape5.jpeg" alt="canape5" />
+            <div>
+              <p>Canapé scandinave 3 p...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contener2">
+        <div class="enTete">
+          <div class="gauche">
+            <h1>Tabouret</h1>
+          </div>
+          <div class="droit">
+            <li><a href="tabouret.html">Voir Plus</a></li>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="items1">
+          <div class="item1">
+            <img src="/images/tabouret1.jpeg" alt="tabouret1`" />
+            <div>
+              <p>Tabouret massage à...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/tabouret2.jpeg" alt="tabouret2" />
+            <div>
+              <p>Tabouret de Douche,..</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/tabouret3.jpeg" alt="tabouret3" />
+            <div>
+              <p>Tabouret Rond Pouf...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/tabouret4.jpeg" alt="tabouret4" />
+            <div>
+              <p>Lot de 2 tabourets de...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/tabouret5.jpeg" alt="tabouret5" />
+            <div>
+              <p>Tabouret Bouton Blanc...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contener2">
+        <div class="enTete">
+          <div class="gauche">
+            <h1>Bureau</h1>
+          </div>
+          <div class="droit">
+            <li><a href="">Voir Plus</a></li>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="items1">
+          <div class="item1">
+            <img src="/images/bureau1.jpeg" alt="bureau1" />
+            <div>
+              <p>Bureau bibliothèque DET...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/bureau2.jpeg" alt="bureau2" />
+            <div>
+              <p>Bureau Bois de récupér...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/bureau3.jpeg" alt="bureau3" />
+            <div>
+              <p>Bureau Bois de récupér...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/bureau4.jpeg" alt="bureau4" />
+            <div>
+              <p>Bureau informatique m...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+          <div class="item1">
+            <img src="/images/bureau5.jpeg" alt="bureau5" />
+            <div>
+              <p>Bureau extensible MAX...</p>
+              <h2>589 DT</h2>
+              <h3>789 DT</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contener3">
+        <div class="prod">
+          <div class="prodd">
+            <img src="/images/lit4.jpeg" alt="lit4" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+          <div class="prodd">
+            <img src="/images/lit3.jpeg" alt="lit3" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+          <div class="prodd">
+            <img src="/images/lit2.jpeg" alt="lit2" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod">
+          <div class="prodd">
+            <img src="/images/armoir4.jpeg" alt="armoir4" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+          <div class="prodd">
+            <img src="/images/armoir5.jpeg" alt="armoir5" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+          <div class="prodd">
+            <img src="/images/armoir6.jpeg" alt="armoir6" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+        </div>
+        <div class="prod">
+          <div class="prodd">
+            <img src="/images/etagere4.jpeg" alt="etagere4" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+          <div class="prodd">
+            <img src="/images/etagere7.jpeg" alt="etagere7" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+          <div class="prodd">
+            <img src="/images/etagere8.jpeg" alt="etagere8" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+        </div>
+        <div class="prod">
+          <div class="prodd">
+            <img src="/images/fauteuil5.jpeg" alt="fauteuil5" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+          <div class="prodd">
+            <img src="/images/fauteuil6.jpeg" alt="fauteuil6" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+          <div class="prodd">
+            <img src="/images/fauteuil7.jpeg" alt="fauteuil7" />
+            <div>
+              <h2>589 DT</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-gauche">
+        <img src="/images/logo-home.jpg" alt="" />
+      </div>
+      <div class="footer-millieu">
+        <div class="a-propos">
+          <h1>A propos:</h1>
+          <p>Qui sommes-nous</p>
+          <p>Conditions d'utilisation</p>
+          <p>Nos services</p>
+        </div>
+      </div>
+      <div class="footer-droit">
+        <h1>Service client:</h1>
+        <p>Centre d'assistance</p>
+        <p>Méthodes de paiement</p>
+        <p>Politique de retour</p>
+      </div>
+    </footer>
+
+    <script src="DOM.js"></script>
+  </body>
 </html>

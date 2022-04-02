@@ -1,0 +1,90 @@
+main {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("/images/conneter.jpeg");
+}
+
+.authentification {
+  width: 450px;
+  height: 400px;
+  background-color: rgba(198, 140, 53, 0.632);
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Account {
+  width: 400px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#Account {
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.Password {
+  width: 400px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#Password {
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.stay {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.sign {
+  margin-left: 50px;
+}
+.conn {
+  margin-left: 50px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  align-items: center;
+}
+.conn i {
+  font-size: 25px;
+  margin-left: 20px;
+}
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  width: 300px;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(220, 114, 0);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 132, 0, 0.961);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}

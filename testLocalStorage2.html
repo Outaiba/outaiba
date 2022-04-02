@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="testLocal.css" />
+  </head>
+  <body>
+    <header>
+      <h4>test</h4>
+      <h4>test</h4>
+      <h4>test</h4>
+      <h4 id="name">test</h4>
+      <a href="testLocalStorage.html"> pannier</a>
+    </header>
+    <main>
+      <button onclick="add1()">click here</button>
+      <button onclick="add2()">click here</button>
+    </main>
+    <footer></footer>
+
+    <script>
+      var product1 = {
+        name: "Iphone name name",
+        img: "tabouret3.jpeg",
+        price: 1555042345,
+      };
+      var product2 = {
+        name: "sumsung name name",
+        img: "tabouret4.jpeg",
+        price: 4444444345,
+      };
+
+      function add1() {
+        localStorage.setItem("item1", JSON.stringify(product1));
+      }
+      function add2() {
+        localStorage.setItem("item2", JSON.stringify(product2));
+      }
+    </script>
+  </body>
+</html>

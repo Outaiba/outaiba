@@ -1,10 +1,407 @@
-p{
-    color: red;
-    background-color: black;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,600&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-h1{
-    color: gray;
+
+header {
+  height: 150px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  z-index: 9999;
 }
-h2{
-    background-color: green;
+header .sold {
+  background-color: rgb(250, 250, 85);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+header .barre {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+header .barre .trois {
+  margin-left: 20px;
+}
+header .listes {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 15px;
+  margin-left: 10px;
+}
+header i {
+  font-size: medium;
+}
+
+header .un {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 150px;
+}
+header .deux {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .deux .recherche {
+  border: solid 2px rgba(255, 166, 0, 0.345);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+.deux button {
+  width: 125px;
+  height: 55px;
+  color: black;
+  background-color: orange;
+  border-radius: 7px;
+}
+.deux input {
+  width: 490px;
+  height: 45px;
+  border: none;
+  margin-left: 20px;
+  outline: none;
+}
+header .trois {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trois li {
+  list-style: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.trois a {
+  text-decoration: none;
+}
+header .trois .conneter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .trois .aide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .trois .panier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a:hover {
+  color: black;
+}
+body {
+  background-color: #f5f5f5;
+}
+
+.back {
+  left: 360px;
+  width: 40px;
+  height: 30px;
+  margin-top: 180px;
+  background-color: rgba(0, 0, 0, 0.276);
+  padding: 8px;
+  position: absolute;
+}
+.front {
+  right: 360px;
+  width: 40px;
+  height: 30px;
+  margin-top: 180px;
+  background-color: rgba(0, 0, 0, 0.276);
+  padding: 8px;
+  position: absolute;
+}
+.front ion-icon,
+.back ion-icon {
+  color: white;
+}
+main {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+main .contener1 {
+  width: 100%;
+  height: 470px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contener1 .contenerGauche {
+  width: 20%;
+  height: 400px;
+  background-color: white;
+}
+.contenerGauche a {
+  text-decoration: none;
+}
+.contenerGauche li {
+  list-style: none;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.contener1 .contenerMulieu {
+  width: 60%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.contenerMulieu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: solid orange 2px;
+}
+.contener1 .contenerDroit {
+  width: 20%;
+  height: 400px;
+}
+.contenerDroit .pub1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+.contenerDroit a {
+  text-decoration: none;
+}
+.contenerDroit li {
+  list-style: none;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 170px;
+}
+
+.pub1 i {
+  font-size: xx-large;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: orange;
+}
+.contenerDroit .pub2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.contenerDroit img {
+  width: 240px;
+  border: solid orange 2px;
+  height: 190px;
+}
+
+.contener2 {
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  margin-top: 50px;
+}
+.contener2 .enTete {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 166, 0, 0.714);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.enTete .droit {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.droit i {
+  margin-right: 20px;
+}
+.contener2 a {
+  text-decoration: none;
+}
+.contener2 li {
+  list-style: none;
+  font-size: 16px;
+  width: 170px;
+}
+.enTete .gauche {
+  margin-left: 40px;
+}
+
+.contener2 .items1 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contener2 .items1 .item1 {
+  width: 220px;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contener2 .item1 img {
+  width: 160px;
+  margin-left: 25px;
+}
+.contener2 .item1 div {
+  width: 220px;
+  margin-left: 20px;
+}
+.contener3 .prod {
+  width: 600px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+}
+.contener3 .prod img {
+  width: 190px;
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+.contener3 .prod .prodd h2 {
+  display: flex;
+  justify-content: space-around;
+}
+.contener3 {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.item1 h3 {
+  font-size: 16px;
+  margin-top: 20px;
+  width: 70px;
+  margin-left: 130px;
+  margin-top: 10px;
+  text-decoration: line-through;
+}
+.item1 h2 {
+  font-size: 20px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.active {
+  color: black;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #272727;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer h1 {
+  color: white;
+  font-size: medium;
+}
+footer p {
+  margin-left: 40px;
+  color: white;
+  font-size: 10px;
+  margin-top: 10px;
+}
+footer img {
+  width: 170px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+  overflow: hidden; /* HIDE SCROLL BAR */
+  background: rgb(250, 250, 85);
+}
+
+/* (B) MOVING TICKER WRAPPER */
+.hmove {
+  display: flex;
+}
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+.hmove i {
+  padding: 10px;
+}
+
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-400%, 0, 0);
+  }
+}
+.hmove {
+  animation: tickerh linear 20s infinite;
+}
+.hmove:hover {
+  animation-play-state: paused;
 }
